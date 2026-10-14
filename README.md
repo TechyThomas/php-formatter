@@ -39,3 +39,7 @@ The included `.tools/mago` executable is the official Mago 1.53.0 release for `a
 ## Configuration
 
 Edit `mago.toml` to change the formatter preset or alignment behavior. Mago's `align-assignment-like` option aligns consecutive assignments and multi-line array pairs; `array-table-style-alignment` controls table-style alignment in arrays.
+
+## Disclaimer
+
+This project was generated with assistance from OpenAI Codex.
