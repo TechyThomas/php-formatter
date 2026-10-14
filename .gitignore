@@ -9,3 +9,7 @@
 *.swo
 *.tmp
 *.log
+
+# Platform-specific Mago binaries installed by the setup scripts
+.tools/linux/
+.tools/windows/

@@ -1,0 +1,20 @@
+{
+  "languages": {
+    "PHP": {
+      "formatter": {
+        "external": {
+          "command": "powershell.exe",
+          "arguments": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-File",
+            "C:\\absolute\\path\\to\\php-formatter\\bin\\zed-php-format.ps1",
+            "{buffer_path}"
+          ]
+        }
+      },
+      "format_on_save": "on"
+    }
+  }
+}

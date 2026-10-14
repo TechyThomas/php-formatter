@@ -2,7 +2,10 @@
 set -eu
 
 root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
-mago="$root/.tools/mago"
+case $(uname -s) in
+    Linux) mago="$root/.tools/linux/mago" ;;
+    *) mago="$root/.tools/mago" ;;
+esac
 buffer_path=${1:-"<stdin>"}
 
 if [ ! -x "$mago" ]; then
