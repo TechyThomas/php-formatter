@@ -1,0 +1,6 @@
+php-version = "8.4.0"
+
+[formatter]
+preset = "psr-12"
+array-table-style-alignment = true
+align-assignment-like = true

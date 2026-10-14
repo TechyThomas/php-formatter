@@ -1,0 +1,14 @@
+#!/bin/sh
+set -eu
+
+root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+mago="$root/.tools/mago"
+buffer_path=${1:-"<stdin>"}
+
+if [ ! -x "$mago" ]; then
+    printf '%s\n' "The bundled Mago formatter is missing from $mago." >&2
+    exit 127
+fi
+
+cd "$root"
+exec "$mago" format --stdin-input --stdin-filepath "$buffer_path"

@@ -1,0 +1,11 @@
+# macOS metadata
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+
+# Editor and temporary files
+*.swp
+*.swo
+*.tmp
+*.log

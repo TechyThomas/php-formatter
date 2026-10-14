@@ -1,0 +1,16 @@
+{
+  "languages": {
+    "PHP": {
+      "formatter": {
+        "external": {
+          "command": "sh",
+          "arguments": [
+            "/Users/thomas/repos/php/php-formatter/bin/zed-php-format",
+            "{buffer_path}"
+          ]
+        }
+      },
+      "format_on_save": "on"
+    }
+  }
+}
