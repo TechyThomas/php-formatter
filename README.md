@@ -43,3 +43,7 @@ Edit `mago.toml` to change the formatter preset or alignment behavior. Mago's `a
 ## Disclaimer
 
 This project was generated with assistance from OpenAI Codex.
+
+## Format only changed lines
+
+Zed can format only Git-modified lines on save with `format_on_save: "modifications"`. This mode requires source control and language-server range-formatting support. Mago's external formatter accepts a whole PHP buffer, so it cannot provide this mode. The example config in `.zed/settings.modified-lines.example.json` switches PHP formatting to Intelephense's range formatter. To enable it, copy that file to `.zed/settings.json` (or apply its PHP settings there). This mode uses Intelephense's formatting style, so Mago's custom alignment rules in `mago.toml` do not apply.
